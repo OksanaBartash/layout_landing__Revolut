@@ -1,1 +1,1 @@
-# layout_landing__Revolut
+Landing Revolut робився на замовлення був сворений самостійно протягом дня.
